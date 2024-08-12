@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f9fa;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+header {
+    background-color: #343a40;
+}
+
+header .navbar-brand img {
+    height: 50px;
+}
+
+header .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+}
+
+.bienvenida, .productos, .contacto {
+    padding: 60px 0;
+}
+
+.bienvenida img {
+    margin-top: 20px;
+    max-height: 350px;
+}
+
+.bienvenida h2, .productos h2, .contacto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.bienvenida p, .productos .card-body p, .contacto p {
+    font-size: 18px;
+}
+
+.productos .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.productos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.productos .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #adb5bd;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .bienvenida h2, .productos h2, .contacto h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}
